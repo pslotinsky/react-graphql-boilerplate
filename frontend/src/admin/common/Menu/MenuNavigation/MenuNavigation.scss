@@ -1,0 +1,29 @@
+.menu-navigation__item {
+    display: block;
+
+    box-sizing: border-box;
+    padding: 0 16px;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    color: #000;
+    border-top: 1px solid #000;
+
+    line-height: 50px;
+
+    &:last-child {
+        border-bottom: 1px solid #000;
+    }
+
+    &:hover:not(.menu-root__item_selected) {
+        opacity: 0.7;
+    }
+}
+
+.menu-navigation__item_selected {
+    cursor: default;
+
+    background: rgba(255, 204, 77, 0.5);
+}

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@admin": ["src/admin"],
+            "@admin/*": ["src/admin/*"],
+            "@common": ["src/common"],
+            "@common/*": ["src/common/*"]
+        }
+    }
+}
