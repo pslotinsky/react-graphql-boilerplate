@@ -32,13 +32,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "csscomb": "csscomb .",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "eslint . --fix --ext .ts,.tsx",
+    "eject": "react-scripts eject",
+    "prepare": "cd .. && husky install frontend/.husky"
   },
   "browserslist": {
     "production": [
@@ -50,19 +46,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx,json,md}": [
-      "npx eslint . --fix --ext .ts,.tsx"
-    ],
-    "src/**/*.{css,scss}": [
-      "csscomb ."
     ]
   }
 }
