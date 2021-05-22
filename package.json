@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "name": "react-graphql-boilerplate",
+    "version": "1.0.0",
+    "workspaces": [
+      "frontend/*",
+      "backend/*",
+      "types"
+    ]
+}
