@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 
-import { TodoModule } from './todo/todo.module';
+import { EquipmentModule } from './equipment/equipment.module';
 
 @Module({
   imports: [
-    TodoModule,
+    EquipmentModule,
     GraphQLModule.forRoot({
       playground: true,
       autoSchemaFile: 'schema.gql',

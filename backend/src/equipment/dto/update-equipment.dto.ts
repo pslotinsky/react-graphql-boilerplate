@@ -2,12 +2,14 @@ import { Field, InputType } from '@nestjs/graphql';
 import { IsOptional } from 'class-validator';
 
 @InputType()
-export class UpdateTodoDto {
-    @Field({ nullable: true })
-    @IsOptional()
-    text?: string;
+export class UpdateEquipmentDto {
 
     @Field({ nullable: true })
     @IsOptional()
-    isDone?: boolean;
+    name?: string;
+
+    @Field({ nullable: true })
+    @IsOptional()
+    count?: number;
+
 }

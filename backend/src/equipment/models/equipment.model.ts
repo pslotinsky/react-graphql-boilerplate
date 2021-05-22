@@ -1,13 +1,15 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 
 @ObjectType()
-export class Todo {
+export class Equipment {
+
     @Field(type => ID)
-    id: number;
+    id: string;
 
     @Field()
-    text: string;
+    name: string;
 
     @Field()
-    isDone: boolean;
+    count: number;
+
 }

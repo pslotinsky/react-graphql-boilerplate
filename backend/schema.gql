@@ -2,29 +2,30 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Todo {
+type Equipment {
   id: ID!
-  text: String!
-  isDone: Boolean!
+  name: String!
+  count: Float!
 }
 
 type Query {
-  todo(id: Float!): Todo!
-  todos: [Todo!]!
+  equipment(id: String!): Equipment!
+  equipments: [Equipment!]!
 }
 
 type Mutation {
-  addTodo(newTodo: NewTodoDto!): Todo!
-  updateTodo(updatedTodoData: UpdateTodoDto!, id: Float!): Boolean!
-  removeTodo(id: Float!): Boolean!
+  addEquipment(data: NewEquipmentDto!): Equipment!
+  updateEquipment(data: UpdateEquipmentDto!, id: String!): Boolean!
+  removeEquipment(id: String!): Boolean!
 }
 
-input NewTodoDto {
-  text: String!
-  isDone: Boolean!
+input NewEquipmentDto {
+  id: ID!
+  name: String!
+  count: Float!
 }
 
-input UpdateTodoDto {
-  text: String
-  isDone: Boolean
+input UpdateEquipmentDto {
+  name: String
+  count: Float
 }
