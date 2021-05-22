@@ -1,0 +1,32 @@
+.equipment-groups {
+    columns: 4 200px;
+}
+
+.equipment-group {
+    position: relative;
+
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    min-height: 40px;
+    margin-bottom: 24px;
+}
+
+.equipment-group__letter {
+    position: absolute;
+    top: 0;
+    left: 8px;
+
+    text-transform: uppercase;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.equipment-group__list {
+    margin-left: 60px;
+}
+
+.equipment-group__item {
+    margin-bottom: 12px;
+}

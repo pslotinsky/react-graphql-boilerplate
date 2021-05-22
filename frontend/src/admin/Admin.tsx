@@ -5,7 +5,7 @@ import {
 
 import './Admin.scss';
 
-import { Menu } from './common/Menu';
+import { Menu } from '@common/Menu';
 import { EquipmentPage } from './EquipmentPage';
 import { UniversityPage } from './UniversityPage';
 
